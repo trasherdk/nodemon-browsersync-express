@@ -1,7 +1,7 @@
 {
-  "name": "nodemon-browsersync-koa",
+  "name": "nodemon-browsersync-express",
   "version": "0.0.1",
-  "description": "Testing nodemon with browsersync and Koa API server",
+  "description": "Testing nodemon with browsersync and Express API server",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trasherdk/nodemon-browsersync-koa.git"
+    "url": "git+https://github.com/trasherdk/nodemon-browsersync-express.git"
   },
   "keywords": [
     "nodemon",
@@ -20,9 +20,9 @@
   "author": "TrasherDK",
   "license": "MIT",
   "dependencies": {
-    "kcors": "^2.2.2",
-    "koa": "^2.13.1",
-    "koa-router": "^10.0.0"
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.5",
