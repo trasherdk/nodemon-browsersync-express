@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 
@@ -13,4 +14,7 @@ router.get(`/`, async (req, res, next) => {
 app.use(cors())
 app.use(router)
 
-app.listen(1337, '127.0.0.1', () => console.log(`Express at: http://localhost:1337`))
+const port = parseInt(process.env.PORT, 10) || 8000
+const host = process.env.HOST || '127.0.0.1'
+
+app.listen(port, host, () => console.log(`Express at: http://${host}:${port}`))
