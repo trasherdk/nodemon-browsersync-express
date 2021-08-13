@@ -3,12 +3,6 @@
   "version": "0.0.1",
   "description": "Testing nodemon with browsersync and Express API server",
   "main": "src/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-run-all -p nodemon browser-sync",
-    "nodemon": "nodemon src/server.js",
-    "browser-sync": "browser-sync start -s --index=src/index.html --files=src/* --no-ui"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trasherdk/nodemon-browsersync-express.git"
@@ -19,6 +13,12 @@
   ],
   "author": "TrasherDK",
   "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon src/server.js",
+    "browser-sync": "browser-sync start -s --index=src/index.html --files=src/* --no-ui"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
