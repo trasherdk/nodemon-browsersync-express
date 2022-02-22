@@ -2,12 +2,12 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 
-const app = new express()
+const app = express()
 const router = express.Router()
 
-router.get(`/`, async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   res.status(200).send({
-    dogs: [`Fido`, `Rover`, `Pussycat`, `Dude`]
+    dogs: ['Fido', 'Rover', 'Pussycat', 'Dude']
   })
 })
 
